@@ -1,0 +1,102 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-hover: #272727;
+    --fonte-principal: 'Inter';
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#CC8941, #000000, #000000);   
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+}
+
+
+.sobre {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3em;
+}
+
+.sobre__foto {
+    width: 10%;
+    border-radius: 70px;
+}
+
+.sobre__leonardo {
+    margin: 0 9em;
+}
+
+.titulo__sobre {
+    margin: 0.2em;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.subtitulo__sobre {
+    margin: 0.5em;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+.links__sobre {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.links__navegacao {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid var(--cor-secundaria);
+    text-decoration: none;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: 400;
+    padding: 15px 10px;
+    color: var(--cor-secundaria);
+
+}
+
+
+
+.links__navegacao:hover {
+    background-color: var(--cor-hover);
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    .sobre {
+        padding: 10%;
+    }
+
+    .sobre__foto {
+        justify-content: center ;
+        width: 40%;
+    }
+
+    .sobre__leonardo {
+        margin:auto;
+    }
+
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
